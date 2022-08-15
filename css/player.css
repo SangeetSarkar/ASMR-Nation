@@ -72,15 +72,22 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center; 
-    width: 15vh;
+    width: 30vh;
     height: 5vh;
+}
+#prev,#play,#next{
+    margin-top:1vh;
+    width:4vh;
+    height: 4vh;
+    border-radius: 100%;
 }
 
 #play{
     font-display: flex;
-    width:7vh;
-    height: 3.5vh;
+    /* width:4vh;
+    height: 4vh; */
     /* border-radius: 100%; */
+    font-size: 2vh;
     justify-content: center;
     align-items: center;
 }

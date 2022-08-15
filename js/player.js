@@ -1,11 +1,13 @@
+//Declarations
 let totalDuration;
 let progress=document.getElementById("songProgress");
 let parent=document.getElementById("trackBackground");
+let pausePlay=document.getElementById("playPause");
 
 //Play Audio Start            
 const audioContext = new AudioContext();
 
-const audioElement=document.querySelector('audio');
+const audioElement=document.querySelector('audio');//Selecting the audio element
 
 const track=audioContext.createMediaElementSource(audioElement);
 
@@ -20,11 +22,14 @@ playButton.addEventListener('click',()=>{
     if(playButton.dataset.playing==='false'){
         audioElement.play();
         playButton.dataset.playing='true';
-        setInterval(change,1000);
         totalDuration = audioElement.duration;
-    }else if(playButton.dataset.playing==='true'){
+        setInterval(change,1000);
+        pausePlay.className="fa-solid fa-pause";
+    }
+    else if(playButton.dataset.playing==='true'){
         audioElement.pause();
         playButton.dataset.playing='false';
+        pausePlay.className="fa-solid fa-play";
     }
 },false);
 
