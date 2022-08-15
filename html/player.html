@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+
+    <script src="https://kit.fontawesome.com/86efc60e3b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/player.css"></link>
+</head>
+<body>
+    <!--Song Details -->
+    <div id="songDetails">
+        <img id="albumCover" src="../img/rickRoll.jpg" alt="Album Cover">
+        <span id="songName">Rick Roll</span>
+    </div>
+    <!-- Container or player -->
+    <div id="playerContainer">
+        <div id="trackBackground">
+            <div id="songProgress"></div>
+        </div>
+        <div id="controls">
+            <audio src="../audio/Masanori_Takumi_-_Kanashiki_Omoi_(BiffHard.click).mp3" id="myAudio"></audio>
+            <button data-playing="false"  id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </div>
+    <script src="../js/player.js" ></script>
+</body>
+</html>
